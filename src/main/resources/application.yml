@@ -1,0 +1,20 @@
+management.metrics.export.prometheus.enabled: true
+management.endpoints.web.exposure.include: prometheus
+
+management.metrics.distribution.percentiles-histogram.http.server.requests: true
+management.metrics.distribution.sla.http.server.requests: 100 ms, 150 ms, 250 ms, 500 ms, 1 s
+management.metrics.enable.jvm: true
+
+spring.datasource.driver-class-name: org.h2.Driver
+spring.datasource.password: 123
+spring.datasource.dsurl: jdbc:h2:mem:something
+spring.datasource.username: root
+spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+
+spring.jpa.hibernate.ddl-auto: create-drop
+
+spring.jpa.properties.hibernate.format_sql: true
+spring.jpa.properties.hibernate.show_sql_comments: true
+spring.jpa.show-sql: true
+
+server.servlet.context-path: /ground
