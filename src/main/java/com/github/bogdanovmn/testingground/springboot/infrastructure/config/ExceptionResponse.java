@@ -12,5 +12,4 @@ class ExceptionResponse {
 	int code;
 	String exception;
 	List<String> stacktrace;
-
 }

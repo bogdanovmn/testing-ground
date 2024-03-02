@@ -1,5 +1,8 @@
 management.metrics.export.prometheus.enabled: true
-management.endpoints.web.exposure.include: prometheus
+
+management.trace.http.enabled: true
+management.endpoints.web.exposure.include: prometheus,httptrace
+management.trace.http.include: RESPONSE_HEADERS
 
 management.metrics.distribution.percentiles-histogram.http.server.requests: true
 management.metrics.distribution.sla.http.server.requests: 100 ms, 150 ms, 250 ms, 500 ms, 1 s
