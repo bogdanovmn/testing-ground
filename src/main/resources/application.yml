@@ -10,7 +10,7 @@ management.metrics.enable.jvm: true
 
 spring.datasource.driver-class-name: org.h2.Driver
 spring.datasource.password: 123
-spring.datasource.dsurl: jdbc:h2:mem:something
+spring.datasource.url: jdbc:h2:mem:something
 spring.datasource.username: root
 spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
 
