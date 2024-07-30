@@ -28,7 +28,7 @@ public class InMemoryStatistic {
             .collect(Collectors.joining("-"));
     }
 
-    public List<Statistic> get() {
+    List<Statistic> get() {
         return hashOps.entries(ROOT_KEY).entrySet().stream()
             .map(
                 entry -> new Statistic(
